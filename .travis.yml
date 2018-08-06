@@ -11,11 +11,11 @@ env:
   global:
     secure: vYU3HJ+9s+Vj8WWRZzjGXy7mhsRAj9DUYZOU62fInmJBf6DQ+XeZ6ZjPUSOpjW8u4Qxfz55fodzqcNOQ1i+IC2KEqbSZLar1JgR1wRUjqrd6HjT0dyT7BeGUw3hjEwnMz7e5AOCBC8LOiw/gJTmvWAU356+PPn8kWu9+jU9AfVmrhThqHi99CkKF8LPFP7qQrAMEWkt8DsQKiXheM01EYGBmnlrljLaGJR94sWevWMIFbDSfJTkGc3yGEt24UPGtjsU4110BwsfxU3POtpTc7ImhBc47W/NgWN1pFj1QpIzFT4M+Rm7fT/+20r1d9ICL5UOt18jk+Tk17k+0ekeFE/cyC69q9suOoejy5ww4aMudAAUSo20SqO2Ph9aI5BqJEGfaC7NYQIM++cRCD31MlGVghbg0/YQYB7Ncixs1Kh2w7Ob/dlrO3kqgtaCAzNi1FQt7wCeLyMghHAyImEcp9DtHQc+SPuQuS3/l8Os1C3EBZ9r8hx4Hhra15RYAVcVXMxkVxBBbcAbqJMyKSXjnJn6+P6cWkTwPhn0Vi+Opd8g+fj02+GKq4lUrBO3KCEVFAHANbOB0IC7g9LnwXBJ9nyrgmUb7eZ1y47QOPxlSvCS6okusiB+cyrVJW2QG5CmlSkRDbXbMam2t/XpFCxWbGjIazbd8OeQ9tstf8dp3j4s=
 
-# env:
-#   global:
-#   - APP_NAME="testCI"
-#   - 'DEVELOPER_NAME="iPhone Distribution: Easemob Inc."'
-#   - PROFILE_NAME="testCI"
+env:
+  global:
+  - APP_NAME="testCI"
+  - 'DEVELOPER_NAME="iPhone Distribution: Easemob Inc."'
+  - PROFILE_NAME="testCI"
 
 script:
 - "./testCI/scripts/build.sh"
