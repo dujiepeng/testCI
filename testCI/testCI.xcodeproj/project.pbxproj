@@ -284,7 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,8 +293,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djp.testCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "039bbfe8-bed3-4edf-a861-c7b85fff2f8e";
-				PROVISIONING_PROFILE_SPECIFIER = testCI_Dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -303,8 +303,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,8 +313,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djp.testCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6feabd73-29e2-463b-92d4-40e0d6afbd5d";
-				PROVISIONING_PROFILE_SPECIFIER = testProfile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
