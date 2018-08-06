@@ -9,8 +9,8 @@ global:
 - LC_ALL=en_US.UTF-8 
 
 script:
-#- xcodebuild -project testCI/testCI.xcodeproj -target testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- xctool testCI -project testCI.xcodeproj -scheme testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- "./scripts/build.sh"
+
 
 
 
