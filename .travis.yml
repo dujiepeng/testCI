@@ -9,8 +9,8 @@ global:
 - LC_ALL=en_US.UTF-8 
 
 script:
-- "./scripts/build.sh"
-
+- xcodebuild archive -project testCI/testCI.xcodeproj -scheme testCI -configuration Release -archivePath archive/testCI.xcarchive CODE_SIGN_IDENTITY="iPhone Developer"
+- xcodebuild -exportArchive -archivePath archive/testCI.xcarchive -exportPath build  -exportOptionsPlist ./ExportOptions.plist
 
 
 
