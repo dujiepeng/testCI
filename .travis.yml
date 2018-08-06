@@ -3,8 +3,9 @@ language: objective-c
 before_install:
     - chmod +x "./testCI/scripts/build.sh"
     - chmod +x "./testCI/scripts/add-key.sh"
+
 before_script:
-	- "./testCI/scripts/add-key.sh"
+- "./testCI/scripts/add-key.sh"
 
 # env:
 #   global:
