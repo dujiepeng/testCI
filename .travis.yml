@@ -6,7 +6,7 @@ global:
 - LC_ALL=en_US.UTF-8 
 
 script:
-- "./scripts/build.sh"
+xcodebuild -project testCI.xcodeproj -target testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 
 
