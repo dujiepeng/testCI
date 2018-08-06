@@ -11,7 +11,7 @@ env:
   global:
   - APP_NAME="testCI"
   - 'DEVELOPER_NAME="iPhone Distribution: EaseMob Inc."'
-  - PROFILE_NAME="testCI"
+  - PROFILE_NAME="Automatic"
 
 script:
 - "./testCI/scripts/build.sh"
