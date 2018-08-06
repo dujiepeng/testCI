@@ -4,7 +4,7 @@ before_install:
     - chmod +x "./testCI/scripts/build.sh"
     - chmod +x "./testCI/scripts/add-key.sh"
 before_script:
-	- ./scripts/add-key.sh
+	- "./scripts/add-key.sh"
 
 env:
   global:
@@ -17,4 +17,4 @@ env:
   - PROFILE_NAME="testCI"
 
 script:
-- ./testCI/scripts/build.sh
+- "./testCI/scripts/build.sh"
