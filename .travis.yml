@@ -2,14 +2,15 @@ osx_image: xcode9.4
 language: objective-c 
 before_install:
  - brew update
+ - brew install xctool
 env: 
 global: 
 - LANG=en_US.UTF-8 
 - LC_ALL=en_US.UTF-8 
 
 script:
-- xcodebuild -project testCI/testCI.xcodeproj -target testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-
+#- xcodebuild -project testCI/testCI.xcodeproj -target testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool testCI -project testCI.xcodeproj -scheme testCI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 
 
