@@ -283,8 +283,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: du jiepeng (VW4TXLZ77N)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,8 +293,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djp.testCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "40d02467-58f5-4d4b-b382-eb624b5cba87";
+				PROVISIONING_PROFILE_SPECIFIER = testCI_Dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -303,8 +303,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: EaseMob Inc.";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,8 +313,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.djp.testCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "6feabd73-29e2-463b-92d4-40e0d6afbd5d";
+				PROVISIONING_PROFILE_SPECIFIER = testProfile;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
