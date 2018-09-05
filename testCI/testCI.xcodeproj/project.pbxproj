@@ -286,6 +286,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: du jiepeng (VW4TXLZ77N)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +307,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: EaseMob Inc.";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
