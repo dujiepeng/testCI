@@ -1,9 +1,25 @@
 #!/bin/sh
-echo */
+# Create a custom keychain
 security create-keychain -p travis ios-build.keychain
-security import ./testCI/scripts/certs/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+security default-keychain -d user -s ios-build.keychain
+security unlock-keychain -p travis ios-build.keychain
+security set-keychain-settings -t 3600 -l ~/Library/Keychains/ios-build.keychain
+
+
+ls -a
+security import ./testCI/scripts/certs/AppleWWDRCA.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
 security import ./testCI/scripts/certs/dist.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
 security import ./testCI/scripts/certs/dist.p12 -k ~/Library/Keychains/ios-build.keychain -P 111111 -T /usr/bin/codesign
+
+echo "list keychains: "  
+security list-keychains
+echo " ****** " 
+
+echo "find indentities keychains: "  
+security find-identity -p codesigning  ~/Library/Keychains/ios-build.keychain
+echo " ****** "
+
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-cp ./testCI/scripts/profile/testCI.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
-security cms -D -i ./testCI/scripts/profile/testCI.mobileprovision
+cp "./testCI/scripts/profile/testCI.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+
+security set-key-partition-list -S apple-tool:,apple: -k "travis" ~/Library/Keychains/ios-build.keychain-db
